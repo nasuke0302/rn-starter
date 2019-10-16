@@ -25,6 +25,12 @@ export default ({ navigation }) => {
                     title='Go to Image Demo'
                 />
             </View>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('Counter')}
+                    title='Go to Counter Demo'
+                />
+            </View>
         </View>
     )
 };
