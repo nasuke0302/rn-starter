@@ -1,9 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
-
 export default ({ navigation }) => {
-
     return (
         <View>
             <Text style={styles.text}>Hello There</Text>
