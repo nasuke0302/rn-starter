@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
 
-const HomeScreen = ({ navigation }) => {
+export default ({ navigation }) => {
 
     return (
         <View>
@@ -19,6 +19,12 @@ const HomeScreen = ({ navigation }) => {
                     title='Go to List Demo'
                 />
             </View>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('Image')}
+                    title='Go to Image Demo'
+                />
+            </View>
         </View>
     )
 };
@@ -31,5 +37,3 @@ const styles = StyleSheet.create({
         marginVertical: 20,
     }
 });
-
-export default HomeScreen;
