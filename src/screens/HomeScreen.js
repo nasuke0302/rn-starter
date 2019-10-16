@@ -2,18 +2,23 @@ import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
 
-const HomeScreen = props => {
+const HomeScreen = ({ navigation }) => {
 
     return (
         <View>
             <Text style={styles.text}>Hello There</Text>
-            <Button 
-                onPress={() => props.navigation.navigate('Components')}
-                title='Go to Components Demo'
-            />
-            <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
-                <Text>Go to List Demo</Text>
-            </TouchableOpacity>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('Components')}
+                    title='Go to Components Demo'
+                />
+            </View>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('List')}
+                    title='Go to List Demo'
+                />
+            </View>
         </View>
     )
 };
@@ -21,6 +26,9 @@ const HomeScreen = props => {
 const styles = StyleSheet.create({
     text: {
         fontSize: 30
+    },
+    button: {
+        marginVertical: 20,
     }
 });
 
