@@ -37,6 +37,12 @@ export default ({ navigation }) => {
                     title='Go to Color Demo'
                 />
             </View>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('Square')}
+                    title='Go to Square Demo'
+                />
+            </View>
         </View>
     )
 };
@@ -46,6 +52,6 @@ const styles = StyleSheet.create({
         fontSize: 30
     },
     button: {
-        marginVertical: 20,
+        marginVertical: 10,
     }
 });
