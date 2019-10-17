@@ -41,6 +41,12 @@ export default ({ navigation }) => {
                     title='Go to Square Demo'
                 />
             </View>
+            <View style={styles.button}>
+                <Button
+                    onPress={() => navigation.navigate('Text')}
+                    title='Go to Text Demo'
+                />
+            </View>
         </View>
     )
 };
